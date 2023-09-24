@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' href='styles/bootstrap.min.css'>
+        <link rel="shortcut icon" href='https://www.svgrepo.com/show/191086/cow.svg' type="image/svg">
+        <title> cows n bools </title>
+        <script src='index.js' defer></script>
+
+        <style>
+            input[type=number] {
+               -moz-appearance: textfield;
+            }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='d-flex justify-content-center align-items-center w-100 h-100'>
+        
+            <div class="container text-center border d-flex justify-content-start" style="min-width: 40rem; width: 10rem; height: 30rem;" >
+                <div class="input-group mt-3 ms-1" style="height: fit-content; width: 15rem;">
+                        <input type="number" class="form-control" maxlength="4" autofocus id="input">
+                        <div class="invalid-feedback position-absolute" style="transform: translateY(160%)"> 4 numbers </div>
+                    <button type="button" class="btn btn-success" id="main"> Submit </button>
+                </div>
+                <div id="history" class="overflow-hidden d-flex justify-content-end flex-column-reverse w-100">
+                    
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
